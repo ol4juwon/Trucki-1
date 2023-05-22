@@ -13,7 +13,7 @@ export default function ConfirmPassword() {
 
   const handleConfirmPassword = async () => {
     try {
-      const response = await fetch(`https://trucki.netlify.app/auth/reset-password/${resetToken}`, {
+      const response = await fetch(`http://localhost:5000/auth/reset-password/${resetToken}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

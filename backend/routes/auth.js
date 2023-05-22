@@ -239,7 +239,3 @@ async function sendPasswordChangeEmail(email) {
 }
 
 module.exports = router;
-
-
-
-module.exports = router;

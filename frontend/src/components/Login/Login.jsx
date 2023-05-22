@@ -13,7 +13,7 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://trucki.netlify.app/api/auth/login', {
+      const response = await fetch('http://localhost:5000/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -25,7 +25,7 @@ export default function Login() {
         const data = await response.json();
         console.log(data);
         // Handle success, e.g., save token to localStorage, redirect user, etc.
-        window.location.href = '/home'; // Redirect to home page
+        window.location.href = '/'; // Redirect to home page
       } else {
         const errorData = await response.json();
         setError(errorData.message);
