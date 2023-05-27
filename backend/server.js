@@ -9,7 +9,10 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: "https://trucki-app.netlify.app/"
+  origin: "https://trucki-app.netlify.app",
+  origin: "https://trucki-app.netlify.app/login",
+  origin: "https://trucki-app.netlify.app/reset-password",
+  origin: "https://trucki-app.netlify.app/confirm-password",
 }));
 
 app.use('/api/auth', authRoutes);
